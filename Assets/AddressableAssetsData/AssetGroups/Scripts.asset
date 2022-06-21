@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Scripts
+  m_EditorClassIdentifier: 
+  m_GroupName: Scripts
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b8437ddc4e05c6e4da97cf2c3f3650c7
+  m_SerializeEntries:
+  - m_GUID: c597bb02ad84483459be238a332d324e
+    m_Address: HotFixGameKit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0131cf423f6e3dc4cad777d942d75d12
+    m_Address: HotFixGameKit_pdb
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 4938d3aa22a0b1c42b04e9d292f321fc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3d8fbcea51de6f44db13ccd812d0b742, type: 2}
+    - {fileID: 11400000, guid: 35fc2d57d5fa8174ca9685669c8b4db5, type: 2}

@@ -1,0 +1,9 @@
+D:\Unity\Projects\HiplayGameKit\HotFixDll\netstandard2.0\HotFixGameKit.deps.json
+D:\Unity\Projects\HiplayGameKit\HotFixDll\netstandard2.0\HotFixGameKit.dll
+D:\Unity\Projects\HiplayGameKit\HotFixDll\netstandard2.0\HotFixGameKit.pdb
+D:\Unity\Projects\HiplayGameKit\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.0\HotFixGameKit.AssemblyInfoInputs.cache
+D:\Unity\Projects\HiplayGameKit\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.0\HotFixGameKit.AssemblyInfo.cs
+D:\Unity\Projects\HiplayGameKit\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.0\HotFixGameKit.csproj.CoreCompileInputs.cache
+D:\Unity\Projects\HiplayGameKit\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.0\HotFixGameKit.dll
+D:\Unity\Projects\HiplayGameKit\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.0\HotFixGameKit.pdb
+D:\Unity\Projects\HiplayGameKit\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.0\HotFixGameKit.csprojAssemblyReference.cache
