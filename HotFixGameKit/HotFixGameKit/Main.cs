@@ -1,8 +1,6 @@
 ﻿using HotFixGameKit.Game;
-using System;
 using UnityEngine;
-using UnityEngine.ResourceManagement.ResourceProviders;
-using UnityEngine.SceneManagement;
+using HotFixModuleTest;
 
 namespace HotFixGameKit
 {
@@ -13,11 +11,10 @@ namespace HotFixGameKit
         {
             Debug.Log("IL Startup");
 
+            var module = new TestModule();
+            module.Show(" main arg ");
 
-            //var logicMgr = GameDirector.Instance.sceneLogicMgr;
-            //var logic = logicMgr.GetSceneLogic("Luancher");
-            //logic.Enter();
-            GameDirector.Instance.Launch();
+            //GameDirector.Instance.Launch();
         }
 
     }

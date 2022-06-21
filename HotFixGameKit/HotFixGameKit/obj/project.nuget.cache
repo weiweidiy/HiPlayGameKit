@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p18ZhIiQ3cSbjfSxvavUbAS3TLqfqGCMp5k1BBXrev2lFzQhWpWObdtEopAVZg4GLDqBc3+zrepkuxyzhb2f9A==",
+  "dgSpecHash": "uy84aDHYF7hDGrBukOG+QJRaT9/CGgueLlks9L0iEHG3kPaqSYTSL6K47/GKhTK3NAoSCDEPtGE/3KSe5A5YTg==",
   "success": true,
-  "projectFilePath": "D:\\Unity\\Projects\\HiplayGameKit\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\weiwe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\weiwe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
