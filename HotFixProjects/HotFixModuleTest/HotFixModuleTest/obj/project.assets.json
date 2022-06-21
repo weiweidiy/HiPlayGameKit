@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
+      "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
       "projectName": "HotFixModuleTest",
-      "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
+      "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\obj\\",
+      "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

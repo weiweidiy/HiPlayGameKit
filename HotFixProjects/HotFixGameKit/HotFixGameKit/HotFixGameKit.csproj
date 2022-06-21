@@ -9,20 +9,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HotFixModuleTest\HotFixModuleTest\HotFixModuleTest.csproj" />
+    <ProjectReference Include="..\..\HotFixModuleTest\HotFixModuleTest\HotFixModuleTest.csproj">
+      <Private>false</Private>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="Unity.Addressables">
-      <HintPath>..\..\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+      <HintPath>..\..\..\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Unity.ResourceManager">
-      <HintPath>..\..\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+      <HintPath>..\..\..\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>..\..\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>..\..\..\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
@@ -30,7 +36,7 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

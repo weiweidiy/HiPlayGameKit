@@ -12,7 +12,7 @@ namespace HotFixGameKit
             Debug.Log("IL Startup");
 
             var module = new TestModule();
-            module.Show(" main arg ");
+            module.Show(" main arg 1");
 
             //GameDirector.Instance.Launch();
         }

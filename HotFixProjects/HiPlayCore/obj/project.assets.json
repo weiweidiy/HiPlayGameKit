@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {
-      "HotFixModuleTest/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "compile": {
-          "bin/placeholder/HotFixModuleTest.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotFixModuleTest.dll": {}
-        }
-      }
-    }
+    ".NETStandard,Version=v2.1": {}
   },
-  "libraries": {
-    "HotFixModuleTest/1.0.0": {
-      "type": "project",
-      "path": "../../HotFixModuleTest/HotFixModuleTest/HotFixModuleTest.csproj",
-      "msbuildProject": "../../HotFixModuleTest/HotFixModuleTest/HotFixModuleTest.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": [
-      "HotFixModuleTest >= 1.0.0"
-    ]
+    ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
     "C:\\Users\\admin\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
-      "projectName": "HotFixGameKit",
-      "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
+      "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HiPlayCore\\HiPlayCore.csproj",
+      "projectName": "HiPlayCore",
+      "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HiPlayCore\\HiPlayCore.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\obj\\",
+      "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HiPlayCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {
-            "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj": {
-              "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

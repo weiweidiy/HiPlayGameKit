@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj": {}
+    "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj": {}
   },
   "projects": {
-    "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj": {
+    "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
+        "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
         "projectName": "HotFixGameKit",
-        "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
+        "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\HotFixGameKit.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixGameKit\\HotFixGameKit\\obj\\",
+        "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixGameKit\\HotFixGameKit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj": {
-                "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj"
+              "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj": {
+                "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj": {
+    "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
+        "projectUniqueName": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
         "projectName": "HotFixModuleTest",
-        "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
+        "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixModuleTest\\HotFixModuleTest\\obj\\",
+        "outputPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

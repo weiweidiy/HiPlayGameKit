@@ -14,21 +14,11 @@
         "runtime": {
           "HotFixGameKit.dll": {}
         }
-      },
-      "HotFixModuleTest/1.0.0": {
-        "runtime": {
-          "HotFixModuleTest.dll": {}
-        }
       }
     }
   },
   "libraries": {
     "HotFixGameKit/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "HotFixModuleTest/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
