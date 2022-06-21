@@ -1,0 +1,12 @@
+D:\Unity\Projects\HiplayGameKit\HotFixDll\netstandard2.0\HotFixModuleTest.deps.json
+D:\Unity\Projects\HiplayGameKit\HotFixDll\netstandard2.0\HotFixModuleTest.dll
+D:\Unity\Projects\HiplayGameKit\HotFixDll\netstandard2.0\HotFixModuleTest.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.0\HotFixModuleTest.AssemblyInfoInputs.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.0\HotFixModuleTest.AssemblyInfo.cs
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.0\HotFixModuleTest.csproj.CoreCompileInputs.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.0\HotFixModuleTest.dll
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.0\HotFixModuleTest.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixDll\netstandard2.0\HotFixModuleTest.deps.json
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixDll\netstandard2.0\HotFixModuleTest.dll
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixDll\netstandard2.0\HotFixModuleTest.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.0\HotFixModuleTest.csprojAssemblyReference.cache
