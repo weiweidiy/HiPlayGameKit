@@ -17,12 +17,20 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b8437ddc4e05c6e4da97cf2c3f3650c7
   m_SerializeEntries:
-  - m_GUID: c597bb02ad84483459be238a332d324e
+  - m_GUID: 785c3a332454f6d41a6a969d816806d4
     m_Address: HotFixGameKit
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 0131cf423f6e3dc4cad777d942d75d12
+  - m_GUID: 64b6b6da879cb0149aaf5b3c9ece4037
     m_Address: HotFixGameKit_pdb
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 86edcb390a167764cb1fb06edcbd4c74
+    m_Address: HotFixModuleTest
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 71e0399c109acdb459bd702f6c613d36
+    m_Address: HotFixModuleTest_pdb
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

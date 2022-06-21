@@ -4,28 +4,23 @@ using UnityEngine;
 
 public class Luancher : MonoBehaviour
 {
-
-    //AddressableDownLoadMgr _downloadMgr = new AddressableDownLoadMgr();
-
-    ILRuntimeMgr hotFixMgr;
-
+    public IHotFixManager ILManager;
     ILRuntimeHotFixFacade hotFixFacade;
 
-
-    const string _scriptsAddress = "HotFixGameKit";
     // Start is called before the first frame update
     async void Start()
     {
-        hotFixMgr = new ILRuntimeMgr(_scriptsAddress);
-        hotFixFacade = new ILRuntimeHotFixFacade(hotFixMgr);
+        ILManager = new ILRuntimeMgr();
+        await ILManager.LoadAssembly("HotFixGameKit");
+        await ILManager.LoadAssembly("HotFixModuleTest");
 
-        await hotFixMgr.InitializeAsync();
-        hotFixFacade.StartUp("HotFixGameKit.Main", "Startup");
+        hotFixFacade = new ILRuntimeHotFixFacade(ILManager);
+        hotFixFacade.StartUp();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

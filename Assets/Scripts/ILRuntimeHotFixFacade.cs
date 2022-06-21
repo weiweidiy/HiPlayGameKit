@@ -6,24 +6,26 @@ using UnityEngine;
 
 public class ILRuntimeHotFixFacade : IHotFixFacade
 {
-    ILRuntimeMgr _hotFixMgr;
+    IHotFixManager _hotFixMgr;
 
+    const string classFullName = "HotFixGameKit.Main";
+    const string methodName = "Startup";
 
-
-    public ILRuntimeHotFixFacade(ILRuntimeMgr hotFixMgr)
+    public ILRuntimeHotFixFacade(IHotFixManager hotFixMgr)
     {
         _hotFixMgr = hotFixMgr;
     }
 
-    public void StartUp(string classFullName, string methodName)
+    public void StartUp()
     {
         //_hotFixMgr.appdomain.Invoke("UnityHotFix.Main", "Start", null, null);
 
         //预先获得IMethod，可以减低每次调用查找方法耗用的时间
-        IType type = _hotFixMgr.appdomain.LoadedTypes[classFullName];
+        //IType type = _hotFixMgr.appdomain.LoadedTypes[classFullName];
+        IType type = _hotFixMgr.GetLoadedType(classFullName);
         IMethod method = type.GetMethod(methodName, 0);
         var main = ((ILType)type).Instantiate();
-        using (var ctx = _hotFixMgr.appdomain.BeginInvoke(method))
+        using (var ctx = _hotFixMgr.BeginInvoke(method))
         {
             ctx.PushObject(main);
             ctx.Invoke();

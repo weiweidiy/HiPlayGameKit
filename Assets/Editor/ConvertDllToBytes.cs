@@ -17,8 +17,12 @@ public class ConvertDllToBytes
         DLLToBytes(false);
     }
 
-    static string NormalPath = "D:/Unity/Projects/HiplayGameKit/HotFixDll/netstandard2.0";
-    static string SavePath = "D:/Unity/Projects/HiplayGameKit/Assets/Download/Scripts";
+    static string NormalPath = "D:/UnityProjects/GameKits/HiPlayGameKit/HotFixDll/netstandard2.1";
+    static string SavePath = "D:/UnityProjects/GameKits/HiPlayGameKit/Assets/Download/Scripts";
+
+    //static string NormalPath = "D:/Unity/Projects/HiplayGameKit/HotFixDll/netstandard2.0";
+    //static string SavePath = "D:/Unity/Projects/HiplayGameKit/Assets/Download/Scripts";
+
 
     private static void DLLToBytes(bool autoChoosePath)
     {
@@ -70,7 +74,7 @@ public class ConvertDllToBytes
         string path = string.Empty;
         for (int i = 0; i < listDLL.Count; i++)
         {
-            path = $"{savePath}/{Path.GetFileNameWithoutExtension(listDLL[i].Name)}_dll_res.bytes";
+            path = $"{savePath}/{Path.GetFileNameWithoutExtension(listDLL[i].Name)}_dll.bytes";
             BytesToFile(path, FileToBytes(listDLL[i]));
         }
         Debug.Log("---DLL 文件转换结束------------------");
@@ -78,7 +82,7 @@ public class ConvertDllToBytes
         Debug.Log("---开始转换 PDB 文件------------------");
         for (int i = 0; i < listPDB.Count; i++)
         {
-            path = $"{savePath}/{Path.GetFileNameWithoutExtension(listPDB[i].Name)}_pdb_res.bytes";
+            path = $"{savePath}/{Path.GetFileNameWithoutExtension(listPDB[i].Name)}_pdb.bytes";
             BytesToFile(path, FileToBytes(listPDB[i]));
         }
         Debug.Log("---PDB 文件转换结束------------------");

@@ -1,6 +1,8 @@
 ﻿using HotFixGameKit;
 using ILRuntime.CLR.Method;
+using ILRuntime.CLR.TypeSystem;
 using ILRuntime.CLR.Utils;
+using ILRuntime.Runtime.Enviorment;
 using ILRuntime.Runtime.Intepreter;
 using ILRuntime.Runtime.Stack;
 using System;
@@ -20,64 +22,43 @@ public class ILRuntimeMgr : IHotFixManager
 {
     public AppDomain appdomain;
 
-    System.IO.MemoryStream fs;
-    System.IO.MemoryStream p;
-
     bool isDebug = true;
-    byte[] dll = null;
-    byte[] pdb = null;
 
-    string HotFixName = "";
-
-
-    public ILRuntimeMgr(string hotFixAddress)
+    public ILRuntimeMgr()
     {
-        HotFixName = hotFixAddress;
+        appdomain = new AppDomain();
+
+        InitializeILRuntime();
+
+        //注册适配器
+        RegisterAdaptor();
     }
 
+    /// <summary>
+    /// 读取字节文本文件
+    /// </summary>
+    /// <param name="path"></param>
+    /// <returns></returns>
     async Task<byte[]> GetBytes(string path)
     {
         TextAsset asset = await Addressables.LoadAssetAsync<TextAsset>(path).Task;
         return asset.bytes;
     }
 
-    public async Task InitializeAsync()
+    /// <summary>
+    /// 加载程序集
+    /// </summary>
+    /// <param name="address"></param>
+    /// <returns></returns>
+    public async Task LoadAssembly(string address)
     {
-
-        appdomain = new ILRuntime.Runtime.Enviorment.AppDomain();
-
-        dll = await GetBytes(HotFixName);
-
+        var dll = await GetBytes(address);
+        byte[] pdb = null;
         if (isDebug)
         {
-            string pdbpath = HotFixName + "_pdb";
+            string pdbpath = address + "_pdb";
             pdb = await GetBytes(pdbpath);
-            appdomain.DebugService.StartDebugService(56000);
         }
-
-        //else
-        //{
-        //    //ILR DLL 直接加载
-        //    string dllpath = HotFixName + ".dll";
-        //    UnityWebRequest dllrequest = UnityWebRequest.Get(dllpath);
-        //    yield return dllrequest.SendWebRequest();
-        //    if (!string.IsNullOrEmpty(dllrequest.error))
-        //        UnityEngine.Debug.LogError(dllrequest.error + " URL:" + dllpath);
-        //    byte[] dllfileByte = dllrequest.downloadHandler.data;
-        //    dllrequest.Dispose();
-        //    dll = dllfileByte;
-        //    if (isDebug)
-        //    {
-        //        string pdbpath = HotFixName + ".pdb";
-        //        UnityWebRequest pdbrequest = UnityWebRequest.Get(pdbpath);
-        //        yield return pdbrequest.SendWebRequest();
-        //        if (!string.IsNullOrEmpty(pdbrequest.error))
-        //            UnityEngine.Debug.LogError(pdbrequest.error + " URL:" + pdbpath);
-        //        byte[] pdbfileByte = pdbrequest.downloadHandler.data;
-        //        pdbrequest.Dispose();
-        //        pdb = pdbfileByte;
-        //    }
-        //}
 
         MemoryStream fs = new MemoryStream(dll);
         {
@@ -91,12 +72,86 @@ public class ILRuntimeMgr : IHotFixManager
                 appdomain.LoadAssembly(fs);
             }
         }
-        InitializeILRuntime();
-
-        //注册适配器
-        RegisterAdaptor();
-
     }
+
+    /// <summary>
+    /// 获取已经加载的类
+    /// </summary>
+    /// <param name="fullClassName"></param>
+    /// <returns></returns>
+    public IType GetLoadedType(string fullClassName)
+    {
+        return appdomain.LoadedTypes[fullClassName];
+    }
+
+    /// <summary>
+    /// 调用方法
+    /// </summary>
+    /// <param name="methodName"></param>
+    /// <returns></returns>
+    public InvocationContext BeginInvoke(IMethod methodName)
+    {
+        return appdomain.BeginInvoke(methodName);
+    }
+
+    //public async Task InitializeAsync()
+    //{
+    //    await LoadAssembly(DefaultDllAdress);
+
+
+
+    //    //dll = await GetBytes(DefaultDllAdress);
+
+    //    //if (isDebug)
+    //    //{
+    //    //    string pdbpath = DefaultDllAdress + "_pdb";
+    //    //    pdb = await GetBytes(pdbpath);
+    //    //    appdomain.DebugService.StartDebugService(56000);
+    //    //}
+
+
+
+    //    //MemoryStream fs = new MemoryStream(dll);
+    //    //{
+    //    //    if (pdb != null)
+    //    //    {
+    //    //        MemoryStream pdbStream = new MemoryStream(pdb);
+    //    //        appdomain.LoadAssembly(fs, pdbStream, new ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider());
+    //    //    }
+    //    //    else
+    //    //    {
+    //    //        appdomain.LoadAssembly(fs);
+    //    //    }
+    //    //}
+
+
+
+
+    //    //else
+    //    //{
+    //    //    //ILR DLL 直接加载
+    //    //    string dllpath = HotFixName + ".dll";
+    //    //    UnityWebRequest dllrequest = UnityWebRequest.Get(dllpath);
+    //    //    yield return dllrequest.SendWebRequest();
+    //    //    if (!string.IsNullOrEmpty(dllrequest.error))
+    //    //        UnityEngine.Debug.LogError(dllrequest.error + " URL:" + dllpath);
+    //    //    byte[] dllfileByte = dllrequest.downloadHandler.data;
+    //    //    dllrequest.Dispose();
+    //    //    dll = dllfileByte;
+    //    //    if (isDebug)
+    //    //    {
+    //    //        string pdbpath = HotFixName + ".pdb";
+    //    //        UnityWebRequest pdbrequest = UnityWebRequest.Get(pdbpath);
+    //    //        yield return pdbrequest.SendWebRequest();
+    //    //        if (!string.IsNullOrEmpty(pdbrequest.error))
+    //    //            UnityEngine.Debug.LogError(pdbrequest.error + " URL:" + pdbpath);
+    //    //        byte[] pdbfileByte = pdbrequest.downloadHandler.data;
+    //    //        pdbrequest.Dispose();
+    //    //        pdb = pdbfileByte;
+    //    //    }
+    //    //}
+
+    //}
 
     unsafe void InitializeILRuntime()
     {
@@ -233,6 +288,10 @@ public class ILRuntimeMgr : IHotFixManager
 
         return __ret;
     }
+
+
+
+
 
 
 
