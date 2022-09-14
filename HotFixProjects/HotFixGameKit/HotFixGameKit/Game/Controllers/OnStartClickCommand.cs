@@ -1,4 +1,5 @@
-﻿using PureMVC.Interfaces;
+﻿using HiPlayCore;
+using PureMVC.Interfaces;
 using PureMVC.Patterns.Command;
 using UnityEngine;
 
@@ -20,7 +21,10 @@ namespace HotFixGameKit.Game
             //转场
             var switchArgs = new SwitchSceneArgs();
             switchArgs.sceneName = "Main";
-            switchArgs.complete += () => {
+            switchArgs.complete += () =>
+            {
+                var test = new CoreTest();
+                Debug.Log("CoreTest Value = " + test.Value);
                 Debug.Log("Main Start");
             };
             SendNotification(nameof(SwitchSceneCommand), switchArgs);

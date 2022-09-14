@@ -9,16 +9,27 @@
     ".NETStandard,Version=v2.1/": {
       "HotFixGameKit/1.0.0": {
         "dependencies": {
+          "HiPlayCore": "1.0.0",
           "HotFixModuleTest": "1.0.0"
         },
         "runtime": {
           "HotFixGameKit.dll": {}
+        }
+      },
+      "HiPlayCore/1.0.0": {
+        "runtime": {
+          "HiPlayCore.dll": {}
         }
       }
     }
   },
   "libraries": {
     "HotFixGameKit/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HiPlayCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

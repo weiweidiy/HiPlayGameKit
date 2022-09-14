@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\HiPlayCore\HiPlayCore.csproj" />
     <ProjectReference Include="..\..\HotFixModuleTest\HotFixModuleTest\HotFixModuleTest.csproj">
       <Private>false</Private>
     </ProjectReference>

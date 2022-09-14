@@ -11,8 +11,8 @@ public class Luancher : MonoBehaviour
     async void Start()
     {
         ILManager = new ILRuntimeMgr();
-        await ILManager.LoadAssembly("HotFixGameKit");
-        await ILManager.LoadAssembly("HotFixModuleTest");
+        await ILManager.LoadAssemblyAsync("HotFixGameKit");
+        await ILManager.LoadAssemblyAsync("HotFixModuleTest");
 
         hotFixFacade = new ILRuntimeHotFixFacade(ILManager);
         hotFixFacade.StartUp();

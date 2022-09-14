@@ -12,3 +12,4 @@ D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixModuleTest\HotFixMo
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.1\HotFixModuleTest.csproj.CoreCompileInputs.cache
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.1\HotFixModuleTest.dll
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.1\HotFixModuleTest.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixModuleTest\HotFixModuleTest\obj\Debug\netstandard2.1\HotFixModuleTest.csprojAssemblyReference.cache

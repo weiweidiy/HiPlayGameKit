@@ -10,14 +10,16 @@ namespace HotFixGameKit.Game
     {
         static GameDirector _instance = null;
 
-        public static GameDirector Instance {
-            get {
+        public static GameDirector Instance
+        {
+            get
+            {
                 if (_instance == null)
                 {
                     _instance = new GameDirector();
                     _instance.Initialize();
                 }
-                    
+
                 return _instance;
             }
         }
@@ -38,7 +40,7 @@ namespace HotFixGameKit.Game
 
         public GameObjectManager gameObjectManager;
 
-        
+
 
         void Initialize()
         {
@@ -68,7 +70,7 @@ namespace HotFixGameKit.Game
 
     public class AppFacade : Facade
     {
-        public AppFacade(string key):base(key)
+        public AppFacade(string key) : base(key)
         {
 
         }

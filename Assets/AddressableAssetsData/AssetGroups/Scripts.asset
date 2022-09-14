@@ -33,6 +33,14 @@ MonoBehaviour:
     m_Address: HotFixModuleTest_pdb
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: b15bdf9c1ebb7374fa68d3432ccd12ca
+    m_Address: HiPlayCore
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6ee623e93cf417041a5208cd2a9c4add
+    m_Address: HiPlayCore_pdb
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4938d3aa22a0b1c42b04e9d292f321fc, type: 2}
   m_SchemaSet:

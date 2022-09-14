@@ -8,7 +8,9 @@ using UnityEngine;
 
 public interface IHotFixManager
 {
-    Task LoadAssembly(string address);
+    Task LoadAssemblyAsync(string address);
+
+    void LoadAssembly(string address);
 
     IType GetLoadedType(string fullClassName);
 

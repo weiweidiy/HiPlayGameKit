@@ -39,25 +39,26 @@ public class ILRuntimeMgr : IHotFixManager
     /// </summary>
     /// <param name="path"></param>
     /// <returns></returns>
-    async Task<byte[]> GetBytes(string path)
+    async Task<byte[]> GetBytesAsync(string path)
     {
         TextAsset asset = await Addressables.LoadAssetAsync<TextAsset>(path).Task;
         return asset.bytes;
     }
+
 
     /// <summary>
     /// 加载程序集
     /// </summary>
     /// <param name="address"></param>
     /// <returns></returns>
-    public async Task LoadAssembly(string address)
+    public async Task LoadAssemblyAsync(string address)
     {
-        var dll = await GetBytes(address);
+        var dll = await GetBytesAsync(address);
         byte[] pdb = null;
         if (isDebug)
         {
             string pdbpath = address + "_pdb";
-            pdb = await GetBytes(pdbpath);
+            pdb = await GetBytesAsync(pdbpath);
         }
 
         MemoryStream fs = new MemoryStream(dll);
@@ -73,6 +74,39 @@ public class ILRuntimeMgr : IHotFixManager
             }
         }
     }
+
+    byte[] GetBytes(string path)
+    {
+        TextAsset asset = Addressables.LoadAssetAsync<TextAsset>(path).WaitForCompletion();
+        return asset.bytes;
+    }
+
+    public void LoadAssembly(string address)
+    {
+
+        var dll = GetBytes(address);
+
+        byte[] pdb = null;
+        if (isDebug)
+        {
+            string pdbpath = address + "_pdb";
+            pdb = GetBytes(pdbpath);
+        }
+
+        MemoryStream fs = new MemoryStream(dll);
+        {
+            if (pdb != null)
+            {
+                MemoryStream pdbStream = new MemoryStream(pdb);
+                appdomain.LoadAssembly(fs, pdbStream, new ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider());
+            }
+            else
+            {
+                appdomain.LoadAssembly(fs);
+            }
+        }
+    }
+
 
     /// <summary>
     /// 获取已经加载的类

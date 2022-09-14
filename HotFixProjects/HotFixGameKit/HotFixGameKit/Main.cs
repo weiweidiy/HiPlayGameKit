@@ -1,6 +1,8 @@
 ﻿using HotFixGameKit.Game;
 using UnityEngine;
 using HotFixModuleTest;
+using HiPlayCore;
+using System;
 
 namespace HotFixGameKit
 {
@@ -14,7 +16,13 @@ namespace HotFixGameKit
             var module = new TestModule();
             module.Show(" main arg 1");
 
-            //GameDirector.Instance.Launch();
+            GameDirector.Instance.Launch();
+
+            GameObject.Find("Luancher").GetComponent<Luancher>().ILManager.LoadAssembly("HiPlayCore");
+
+            //var test = new CoreTest();
+            //Debug.Log("CoreTest Value = " + test.Value);
+
         }
 
     }

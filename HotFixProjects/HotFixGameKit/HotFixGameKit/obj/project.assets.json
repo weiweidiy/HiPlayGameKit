@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "HiPlayCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/HiPlayCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HiPlayCore.dll": {}
+        }
+      },
       "HotFixModuleTest/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -15,6 +25,11 @@
     }
   },
   "libraries": {
+    "HiPlayCore/1.0.0": {
+      "type": "project",
+      "path": "../../HiPlayCore/HiPlayCore.csproj",
+      "msbuildProject": "../../HiPlayCore/HiPlayCore.csproj"
+    },
     "HotFixModuleTest/1.0.0": {
       "type": "project",
       "path": "../../HotFixModuleTest/HotFixModuleTest/HotFixModuleTest.csproj",
@@ -23,6 +38,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "HiPlayCore >= 1.0.0",
       "HotFixModuleTest >= 1.0.0"
     ]
   },
@@ -53,6 +69,9 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
+            "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HiPlayCore\\HiPlayCore.csproj": {
+              "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HiPlayCore\\HiPlayCore.csproj"
+            },
             "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj": {
               "projectPath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HotFixModuleTest\\HotFixModuleTest\\HotFixModuleTest.csproj"
             }

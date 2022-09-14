@@ -1,0 +1,9 @@
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\bin\Debug\netstandard2.0\EventManager.deps.json
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\bin\Debug\netstandard2.0\EventManager.dll
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\bin\Debug\netstandard2.0\EventManager.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\obj\Debug\netstandard2.0\EventManager.csprojAssemblyReference.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\obj\Debug\netstandard2.0\EventManager.AssemblyInfoInputs.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\obj\Debug\netstandard2.0\EventManager.AssemblyInfo.cs
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\obj\Debug\netstandard2.0\EventManager.csproj.CoreCompileInputs.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\obj\Debug\netstandard2.0\EventManager.dll
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\EventManager\obj\Debug\netstandard2.0\EventManager.pdb

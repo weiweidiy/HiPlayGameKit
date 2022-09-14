@@ -14,3 +14,4 @@ D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixGameKit\HotFixGameK
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.1\HotFixGameKit.csproj.CoreCompileInputs.cache
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.1\HotFixGameKit.dll
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.1\HotFixGameKit.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HotFixGameKit\HotFixGameKit\obj\Debug\netstandard2.1\HotFixGameKit.csproj.CopyComplete

@@ -21,7 +21,7 @@ namespace HotFixGameKit.Game
             var facade = _gameDirector.facade;
             var switchArgs = GetSwitchArgs();
 
-            facade.RegisterCommand(nameof(SwitchSceneCommand), () => new SwitchSceneCommand());           
+            facade.RegisterCommand(nameof(SwitchSceneCommand), () => new SwitchSceneCommand());
             facade.SendNotification(nameof(SwitchSceneCommand), switchArgs);
         }
 
@@ -32,7 +32,8 @@ namespace HotFixGameKit.Game
 
             var switchArgs = new SwitchSceneArgs();
             switchArgs.sceneName = "Menu";
-            switchArgs.complete += () => {
+            switchArgs.complete += () =>
+            {
                 facade.SendNotification(nameof(StartupMenuCommand));
             };
             return switchArgs;

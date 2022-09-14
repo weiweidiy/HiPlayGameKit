@@ -11,7 +11,7 @@ namespace HotFixGameKit.Game
             var gameDirector = GameDirector.Instance;
             var facade = gameDirector.facade;
 
-            if(CheckDownload())
+            if (CheckDownload())
             {
 
             }
@@ -19,7 +19,7 @@ namespace HotFixGameKit.Game
             {
 
             }
-            
+
         }
 
         bool CheckDownload()
@@ -36,7 +36,7 @@ namespace HotFixGameKit.Game
         {
             base.Execute(notification);
 
- 
+
             CreateMenuButton();
         }
 
