@@ -9,3 +9,4 @@ D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiPlayCore\obj\Debug\nets
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixDll\netstandard2.1\HiPlayCore.deps.json
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixDll\netstandard2.1\HiPlayCore.dll
 D:\UnityProjects\GameKits\HiPlayGameKit\HotFixDll\netstandard2.1\HiPlayCore.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiPlayCore\obj\Debug\netstandard2.1\HiPlayCore.csprojAssemblyReference.cache

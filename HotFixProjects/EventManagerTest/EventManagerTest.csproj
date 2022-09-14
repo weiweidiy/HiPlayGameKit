@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="EventManagerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommonTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
