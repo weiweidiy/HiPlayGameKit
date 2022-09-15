@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace FileReaderWriter
 {
@@ -7,9 +8,15 @@ namespace FileReaderWriter
     {
         protected override string OnProcessLine(string file, string line, int lineNumber)
         {
-            if (line.Contains("0cbf0f96efed0c141a0e992814b9c71d"))
+            //Console.WriteLine(line);
+            if (line.Contains("Juese_Jianhun"))
                 Console.WriteLine(file);
             return line;
+        }
+
+        protected override void OnStartProcessFile(string file)
+        {
+            Console.WriteLine(file);
         }
     }
     class Program
@@ -18,12 +25,23 @@ namespace FileReaderWriter
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            string path = "C:/Unity/Assets";
-            var process = new TestReadFileProcessor();
-            process.Process(path, null);
+            string path = "D:/Test2";
+            Test();
+            //var process = new TestReadFileProcessor();
+            //process.Process(path, null);
 
             Console.WriteLine("done");
+            Console.ReadLine();
+        }
+
+        static async void Test()
+        {
+            string path = "D:/Test2";
+            var process = new TestReadFileProcessor();
+            var task = process.ProcessAsync(path, null);
+            Console.WriteLine("continue");
+            await task;
+            Console.WriteLine("complete");
         }
     }
 }

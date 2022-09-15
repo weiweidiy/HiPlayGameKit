@@ -1,12 +1,13 @@
 ﻿using System;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace FileReaderWriter
 {
     /// <summary>
     /// 文件处理类
     /// </summary>
-    public abstract class ReadTextFileProcessor : FileProcessor
+    public abstract class ReadTextFileProcessor : TextFileProcessor
     {
         protected override void OnProcessFile(string file)
         {

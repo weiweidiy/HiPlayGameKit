@@ -1,12 +1,12 @@
 ﻿using System.IO;
+using System.Threading.Tasks;
 
 namespace FileReaderWriter
 {
-    public abstract class ReplaceTextFileProcessor : FileProcessor
+    public abstract class ReplaceTextFileProcessor : TextFileProcessor
     {
         protected override void OnProcessFile(string file)
         {
-
             var tempOutput = "tempOutput";
 
             if (File.Exists(tempOutput))
