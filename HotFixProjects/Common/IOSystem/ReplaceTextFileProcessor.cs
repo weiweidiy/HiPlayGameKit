@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace FileReaderWriter
 {
-    public abstract class ReplaceTextFileProcessor : TextFileProcessor
+    public abstract class ReplaceTextFileProcessor : FileProcessor
     {
         protected override void OnProcessFile(string file)
         {

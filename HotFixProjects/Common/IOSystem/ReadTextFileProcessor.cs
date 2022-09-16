@@ -7,7 +7,7 @@ namespace FileReaderWriter
     /// <summary>
     /// 文件处理类
     /// </summary>
-    public abstract class ReadTextFileProcessor : TextFileProcessor
+    public abstract class ReadTextFileProcessor : FileProcessor
     {
         protected override void OnProcessFile(string file)
         {
