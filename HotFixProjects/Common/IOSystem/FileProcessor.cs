@@ -44,10 +44,10 @@ namespace FileReaderWriter
             await ProcessAsync(path, filter);
         }
 
-        public async Task ProcessAsync(string path, FileFilter filter)
+        public async Task<string> ProcessAsync(string path, FileFilter filter)
         {
             fileFilter = filter;
-            await ProcessAsync(path);
+            return await ProcessAsync(path);
         }
 
         public async void Process(string path, FileHinter hinter)
@@ -55,10 +55,10 @@ namespace FileReaderWriter
             await ProcessAsync(path, hinter);
         }
 
-        public async Task ProcessAsync(string path, FileHinter hinter)
+        public async Task<string> ProcessAsync(string path, FileHinter hinter)
         {
             fileHinter = hinter;
-            await ProcessAsync(path);
+            return await ProcessAsync(path);
         }
 
         /// <summary>
@@ -77,10 +77,10 @@ namespace FileReaderWriter
         /// <param name="path"></param>
         /// <param name="filter"></param>
         /// <returns></returns>
-        public async Task ProcessAsync(string path)
+        public async Task<string> ProcessAsync(string path)
         {
 
-            var task = Task.Factory.StartNew(() =>
+            var task = Task<string>.Factory.StartNew(() =>
             {
                 var files = FileUtils.GetFiles(path);
                 var maxCount = files.Length;
@@ -103,12 +103,19 @@ namespace FileReaderWriter
                     OnProcessFile(file);
                     OnEndProcessFile(file);
                 }
+
+                return GetReport();
+
             }, tokenSource.Token);
 
-            await task;
+            return await task;
         }
 
-
+        /// <summary>
+        /// 获取处理报告
+        /// </summary>
+        /// <returns></returns>
+        public virtual string GetReport() { return ""; }
 
         /// <summary>
         /// 开始处理
@@ -127,6 +134,7 @@ namespace FileReaderWriter
         /// </summary>
         /// <param name="file"></param>
         protected virtual void OnEndProcessFile(string file) { }
+
     }
 
 }

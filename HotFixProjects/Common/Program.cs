@@ -21,6 +21,11 @@ namespace FileReaderWriter
 
     public class TestReadFileProcessor : ReadTextFileProcessor
     {
+        public override string GetReport()
+        {
+            return "report";
+        }
+
         protected override string OnProcessLine(string file, string line, int lineNumber)
         {
             //Console.WriteLine(line);
@@ -35,12 +40,22 @@ namespace FileReaderWriter
         }
     }
 
+
+    public class TestRepeatFileProcessor : RepeatFileProcessor
+    {
+        protected override void OnRepeatFile(string fileName, string path1, string path2)
+        {
+            Console.WriteLine(path1);
+            Console.WriteLine(path2);
+            Console.WriteLine("");
+        }
+    }
+
     class Program
     {
-        static RepeatFileProcessor process = new RepeatFileProcessor();
+        static FileProcessor process = new TestRepeatFileProcessor();
         static void Main(string[] args)
         {
-
             Console.WriteLine("Hello World!");
 
             Test();
@@ -56,8 +71,8 @@ namespace FileReaderWriter
             string path = "C:/Unity/Assets/Art/UI";
             var task = process.ProcessAsync(path, new UnityHinter());
             Console.WriteLine("continue");
-            await task;
-            Console.WriteLine("complete");
+            var report = await task;
+            Console.WriteLine("complete " + report);
         }
     }
 }
