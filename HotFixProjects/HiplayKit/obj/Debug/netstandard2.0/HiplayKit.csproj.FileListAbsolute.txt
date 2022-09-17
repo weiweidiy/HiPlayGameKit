@@ -1,0 +1,9 @@
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\obj\Debug\netstandard2.0\HiplayKit.csprojAssemblyReference.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\obj\Debug\netstandard2.0\HiplayKit.AssemblyInfoInputs.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\obj\Debug\netstandard2.0\HiplayKit.AssemblyInfo.cs
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\obj\Debug\netstandard2.0\HiplayKit.csproj.CoreCompileInputs.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\bin\Debug\netstandard2.0\HiplayKit.deps.json
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\bin\Debug\netstandard2.0\HiplayKit.dll
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\bin\Debug\netstandard2.0\HiplayKit.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\obj\Debug\netstandard2.0\HiplayKit.dll
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\HiplayKit\obj\Debug\netstandard2.0\HiplayKit.pdb

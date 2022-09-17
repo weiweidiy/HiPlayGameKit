@@ -1,29 +1,29 @@
-﻿using HotFixGameKit.Game;
-using UnityEngine;
-using HotFixModuleTest;
-using HiPlayCore;
-using System;
+﻿//using HotFixGameKit.Game;
+//using UnityEngine;
+//using HotFixModuleTest;
+//using HiPlayCore;
+//using System;
 
-namespace HotFixGameKit
-{
+//namespace HotFixGameKit
+//{
 
-    public class Main
-    {
-        public void Startup()
-        {
-            Debug.Log("IL Startup");
+//    public class Main
+//    {
+//        public void Startup()
+//        {
+//            Debug.Log("IL Startup");
 
-            var module = new TestModule();
-            module.Show(" main arg 1");
+//            var module = new TestModule();
+//            module.Show(" main arg 1");
 
-            GameDirector.Instance.Launch();
+//            GameDirector.Instance.Launch();
 
-            GameObject.Find("Luancher").GetComponent<Luancher>().ILManager.LoadAssembly("HiPlayCore");
+//            GameObject.Find("Luancher").GetComponent<Luancher>().ILManager.LoadAssembly("HiPlayCore");
 
-            //var test = new CoreTest();
-            //Debug.Log("CoreTest Value = " + test.Value);
+//            //var test = new CoreTest();
+//            //Debug.Log("CoreTest Value = " + test.Value);
 
-        }
+//        }
 
-    }
-}
+//    }
+//}

@@ -9,13 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HiPlayCore\HiPlayCore.csproj" />
-    <ProjectReference Include="..\..\HotFixModuleTest\HotFixModuleTest\HotFixModuleTest.csproj">
-      <Private>false</Private>
-    </ProjectReference>
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>

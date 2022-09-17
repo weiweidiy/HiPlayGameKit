@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FveIhlJPp8D5DkHWmN4qLB8KyXVXTcz8y+mURsR7A3b726r7Lqyl3Xg8wogPTwvdSnr7pPMzUKxrCZFwW65itg==",
+  "success": true,
+  "projectFilePath": "D:\\UnityProjects\\GameKits\\HiPlayGameKit\\HotFixProjects\\HiplayKit\\HiplayKit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

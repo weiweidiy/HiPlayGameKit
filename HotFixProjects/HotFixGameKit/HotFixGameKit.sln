@@ -5,15 +5,11 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotFixGameKit", "HotFixGameKit\HotFixGameKit.csproj", "{BF2F4174-C6DF-4747-B9B7-400513CE8CCD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotFixModuleTest", "..\HotFixModuleTest\HotFixModuleTest\HotFixModuleTest.csproj", "{4A28AEA1-5B49-4DA3-B529-2CB64EE0E585}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCase", "..\EventManagerTest\TestCase.csproj", "{3EE440A3-FA71-4E77-BF8A-E28936B9046D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiPlayCore", "..\HiPlayCore\HiPlayCore.csproj", "{F57C75F4-8A91-4990-9765-259E9E3F5A3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiplayKit", "..\HiplayKit\HiplayKit.csproj", "{A04C5739-477D-4A7B-949C-B92D88EEAEED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManager", "..\EventManager\EventManager.csproj", "{39D6DB23-E2E8-433F-8372-E7F9D9420F7E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagerTest", "..\EventManagerTest\EventManagerTest.csproj", "{3EE440A3-FA71-4E77-BF8A-E28936B9046D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{54DFE5C5-FEBB-4AE9-A653-4109B338B3CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "..\ConsoleTest\ConsoleTest.csproj", "{8A0E646D-D830-4772-BCAB-2B562BDAD156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,26 +21,18 @@ Global
 		{BF2F4174-C6DF-4747-B9B7-400513CE8CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF2F4174-C6DF-4747-B9B7-400513CE8CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF2F4174-C6DF-4747-B9B7-400513CE8CCD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A28AEA1-5B49-4DA3-B529-2CB64EE0E585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A28AEA1-5B49-4DA3-B529-2CB64EE0E585}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A28AEA1-5B49-4DA3-B529-2CB64EE0E585}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A28AEA1-5B49-4DA3-B529-2CB64EE0E585}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F57C75F4-8A91-4990-9765-259E9E3F5A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F57C75F4-8A91-4990-9765-259E9E3F5A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F57C75F4-8A91-4990-9765-259E9E3F5A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F57C75F4-8A91-4990-9765-259E9E3F5A3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39D6DB23-E2E8-433F-8372-E7F9D9420F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39D6DB23-E2E8-433F-8372-E7F9D9420F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39D6DB23-E2E8-433F-8372-E7F9D9420F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39D6DB23-E2E8-433F-8372-E7F9D9420F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3EE440A3-FA71-4E77-BF8A-E28936B9046D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3EE440A3-FA71-4E77-BF8A-E28936B9046D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EE440A3-FA71-4E77-BF8A-E28936B9046D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EE440A3-FA71-4E77-BF8A-E28936B9046D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54DFE5C5-FEBB-4AE9-A653-4109B338B3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54DFE5C5-FEBB-4AE9-A653-4109B338B3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54DFE5C5-FEBB-4AE9-A653-4109B338B3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54DFE5C5-FEBB-4AE9-A653-4109B338B3CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A04C5739-477D-4A7B-949C-B92D88EEAEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A04C5739-477D-4A7B-949C-B92D88EEAEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A04C5739-477D-4A7B-949C-B92D88EEAEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A04C5739-477D-4A7B-949C-B92D88EEAEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0E646D-D830-4772-BCAB-2B562BDAD156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0E646D-D830-4772-BCAB-2B562BDAD156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0E646D-D830-4772-BCAB-2B562BDAD156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0E646D-D830-4772-BCAB-2B562BDAD156}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

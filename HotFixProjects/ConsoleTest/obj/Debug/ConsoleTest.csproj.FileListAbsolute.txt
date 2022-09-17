@@ -1,0 +1,10 @@
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\bin\Debug\ConsoleTest.exe
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\bin\Debug\ConsoleTest.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\bin\Debug\HiplayKit.dll
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\bin\Debug\HiplayKit.pdb
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\obj\Debug\ConsoleTest.csprojAssemblyReference.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\obj\Debug\ConsoleTest.csproj.CoreCompileInputs.cache
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\obj\Debug\ConsoleTest.csproj.CopyComplete
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\obj\Debug\ConsoleTest.exe
+D:\UnityProjects\GameKits\HiPlayGameKit\HotFixProjects\ConsoleTest\obj\Debug\ConsoleTest.pdb

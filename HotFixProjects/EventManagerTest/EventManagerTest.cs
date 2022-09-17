@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using EventCore;
 using NSubstitute;
+using EventCore;
 
 namespace EventManagerTest
 {
