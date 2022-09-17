@@ -104,5 +104,23 @@ namespace EventManagerTest
             //expect
             Assert.AreEqual(1, manager.GetCount<TestEvent>());
         }
+
+        //[TestMethod]
+        //public void TestException()
+        //{
+        //    //arrange
+        //    var callBack = Substitute.For<EventManager.EventDelegate<TestEvent>>();
+        //    EventManager manager = new EventManager();
+
+        //    //action
+        //    manager.AddListener<TestEvent>(callBack);
+        //    manager.AddListener<TestEvent>(callBack);
+
+        //    var e = new TestEvent();
+        //    manager.Raise(e);
+
+        //    //expect
+        //    callBack.Received(1).DynamicInvoke(new object[] { e });
+        //}
     }
 }

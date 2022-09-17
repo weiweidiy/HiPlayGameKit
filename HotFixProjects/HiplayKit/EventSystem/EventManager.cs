@@ -102,7 +102,14 @@ namespace EventCore
                     var d = delList[i];
                     if (!e.Handled || d.ForceHandle)
                     {
-                        d.InvokeHandler(e);
+                        try
+                        {
+                            d.InvokeHandler(e);
+                        }
+                        catch (Exception exception)
+                        {
+                            throw exception;
+                        }
                     }
                 }
             }
